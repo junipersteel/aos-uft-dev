@@ -19,6 +19,10 @@ on:
       environment:
         description: 'Environment to run tests against'
         type: environment
+        options:
+        - dev
+        - staging
+        - test
         required: false
 env: 
     NODE_TLS_REJECT_UNAUTHORIZED: 0
