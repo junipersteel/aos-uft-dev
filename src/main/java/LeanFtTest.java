@@ -18,6 +18,8 @@ import java.awt.Robot;
 import java.net.URI;
 import java.net.URL;
 
+// JA Test 0001-Addition
+
 public class LeanFtTest extends UnitTestClassBase {
 
     private static Browser browser;
