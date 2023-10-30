@@ -18,7 +18,7 @@ import java.awt.Robot;
 import java.net.URI;
 import java.net.URL;
 
-// 1JA Test 0001-Addition
+// Ztech
 public class LeanFtTest extends UnitTestClassBase {
 
     private static Browser browser;
