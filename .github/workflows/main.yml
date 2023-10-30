@@ -1,29 +1,13 @@
 name: OctaneIntegration
 # Events the integration should be triggered on
 on:
-  workflow_dispatch:
-    inputs:
-      logLevel:
-        description: 'Log level'
-        required: true
-        default: 'warning'
-        type: choice
-        options:
-        - info
-        - warning
-        - debug
-      tags:
-        description: 'Test scenario tags'
-        required: false
-        type: boolean
-      environment:
-        description: 'Environment to run tests against'
-        type: environment
-        options:
-        - dev
-        - staging
-        - test
-        required: false
+  pull_request:
+    types: [opened, edited, closed, reopened]
+  workflow_run:
+    # List of workflows to integrate with ALM Octane
+    workflows: [CI]
+    types: [requested, completed]
+# Node configuration for allowing HTTPS requests
 env: 
     NODE_TLS_REJECT_UNAUTHORIZED: 0
 jobs:
