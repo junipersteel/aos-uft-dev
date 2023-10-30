@@ -47,6 +47,6 @@ jobs:
           # Automatically provided GitHub token
           githubToken: ${{secrets.GITHUB_TOKEN}}
           # The url that the CI Server in ALM Octane will point to
-          serverBaseUrl: https://github.com/MyUser/MyCustomRepository
+          serverBaseUrl: https://github.com//junipersteel//aos-uft-dev.git
           # Pattern for identifying JUnit style report files for test result injection in ALM Octane
           unitTestResultsGlobPattern: "**/*.xml"
